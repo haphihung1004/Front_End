@@ -1,0 +1,35 @@
+
+.large-pic {
+	width: 100%;
+    border: 1px solid #e1e0e0;
+    margin-bottom: 10px
+}
+.small-pic {
+    width: 100%;
+    border: 1px solid #e1e0e0;
+}
+.small-pic:hover{
+	opacity: 1;
+}
+
+
+
+
+.faded{
+	opacity:0.7;
+}
+
+
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff !important;
+    cursor: default;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+
+.pagination>li>a, .pagination>li>span {
+    color: #777777 !important;
+    }

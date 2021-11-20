@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-md navbar-default navbar-dark">
+  <a class="navbar-brand" href="#">FITBOOK</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Notification</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Account</a>
+      </li>   
+    </ul>
+  </div>  
+</nav>
+	<div class="main">
+		<div class="container">
+			<img src="public/images/1.png" alt="hinh" class="img-responsive">
+		</div>
+		<div class="col-md-6 ">
+			<form action="" method="POST" role="form" onsubmit = " return validateForm(); " novalidate id="myform">
+				<legend>Login</legend>
+				<div class="form-group">
+					
+						<label for="">FullName</label>
+					
+						<input type="text" class="form-control" pattern ="\w{3,}(\s?\w+)+" id="fullname"  placeholder="Please input your FullName..." required>
+						<div class="invalid-feedback">
+							Please provide a correct fullname.
+						</div>
+					
+				</div>
+				<div class="form-group">
+			
+			<label for="">Password</label>
+			
+			<input type="text" class="form-control" pattern ="\w{6,}"  id="Password" placeholder="Please input your PassWord..." required>
+			<div class="invalid-feedback">
+							Password must have at least 6 characters.
+						</div>
+			
+		</div>
+		<div class="form-group ">
+			
+			<label for="">Sercurity code</label>
+			
+			<div class="codes">345</div>	
+			<input type="text" class="form-control" pattern =".+" id="code" placeholder="Please input your code above..." required>
+			<div class="invalid-feedback">
+							Incorect code
+						</div>
+		</div>
+				<button type="submit" class="btn btn-primary">Sign Up</button>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<h4>Form Validate</h4>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="public/js/scrip.js"></script>
+</body>
+
+</html>
